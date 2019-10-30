@@ -7,13 +7,157 @@
     android:background="#f7ebf4"
     tools:context=".HomeActivity">
 
-    <ImageView
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/profile_image"
         android:layout_width="150dp"
         android:layout_height="150dp"
-        android:layout_marginTop="100dp"
         android:layout_centerHorizontal="true"
-        android:background="@drawable/rounded_image"/>
+        android:src="@drawable/unnamed"
+        android:layout_marginTop="50dp"
+        app:civ_border_color="#fff"
+        app:civ_border_width="2dp" />
 
+
+
+    <TextView
+        android:id="@+id/textNama"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/profile_image"
+        android:layout_marginTop="20dp"
+        android:paddingLeft="12dp"
+        android:text="Nama"
+        android:textColor="@color/colorTextView"/>
+
+    <TextView
+        android:id="@+id/textNama1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textNama"
+        android:layout_marginTop="10dp"
+        android:paddingLeft="12dp"
+        android:textColor="@color/colorTextView2"
+        />
+
+    <TextView
+        android:id="@+id/textTgl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textNama1"
+        android:layout_marginTop="20dp"
+        android:paddingLeft="12dp"
+        android:text="Tanggal Lahir"
+        android:textColor="@color/colorTextView"/>
+
+    <TextView
+        android:id="@+id/textTgl1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textTgl"
+        android:layout_marginTop="10dp"
+        android:paddingLeft="12dp"
+        android:textColor="@color/colorTextView2"
+        />
+
+    <TextView
+        android:id="@+id/textAlm"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textTgl1"
+        android:layout_marginTop="20dp"
+        android:paddingLeft="12dp"
+        android:text="Alamat"
+        android:textColor="@color/colorTextView"/>
+
+    <TextView
+        android:id="@+id/textAlm1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textAlm"
+        android:layout_marginTop="10dp"
+        android:paddingLeft="12dp"
+        android:textColor="@color/colorTextView2"
+        />
+
+    <TextView
+        android:id="@+id/textAgm"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textAlm1"
+        android:layout_marginTop="20dp"
+        android:paddingLeft="12dp"
+        android:text="Agama"
+        android:textColor="@color/colorTextView"/>
+
+    <TextView
+        android:id="@+id/textAgm1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textAgm"
+        android:layout_marginTop="10dp"
+        android:paddingLeft="12dp"
+        android:textColor="@color/colorTextView2"
+        />
+
+    <TextView
+        android:id="@+id/textHP"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textAgm1"
+        android:layout_marginTop="20dp"
+        android:paddingLeft="12dp"
+        android:text="Nomor HP"
+        android:textColor="@color/colorTextView"/>
+
+    <TextView
+        android:id="@+id/textHP1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textHP"
+        android:layout_marginTop="10dp"
+        android:paddingLeft="12dp"
+        android:textColor="@color/colorTextView2"
+        />
+
+    <TextView
+        android:id="@+id/textNIK"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textHP1"
+        android:layout_marginTop="20dp"
+        android:paddingLeft="12dp"
+        android:text="NIK"
+        android:textColor="@color/colorTextView"/>
+
+    <TextView
+        android:id="@+id/textNIK1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textNIK"
+        android:layout_marginTop="10dp"
+        android:paddingLeft="12dp"
+        android:textColor="@color/colorTextView2"
+        />
+
+    <TextView
+        android:id="@+id/textPk"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textNIK1"
+        android:layout_marginTop="20dp"
+        android:paddingLeft="12dp"
+        android:text="Pekerjaan"
+        android:textColor="@color/colorTextView"/>
+
+    <TextView
+        android:id="@+id/textPk1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textPk"
+        android:layout_marginTop="10dp"
+        android:paddingLeft="12dp"
+        android:textColor="@color/colorTextView2"
+        />
 
 
 </RelativeLayout>
