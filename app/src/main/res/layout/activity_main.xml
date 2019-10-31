@@ -8,6 +8,7 @@
     tools:context=".MainActivity"
     android:theme="@style/AppTheme">
 
+
     <EditText
         android:id="@+id/user"
         android:layout_width="250dp"
@@ -43,7 +44,9 @@
         android:textColorHint="#FFFFFF"
         android:textColor="#FFFFFF"
         android:textSize="16dp"
-        android:paddingLeft="20dp"/>
+        android:paddingLeft="20dp"
+        />
+
 
     <ImageView
         android:id="@+id/imageView2"

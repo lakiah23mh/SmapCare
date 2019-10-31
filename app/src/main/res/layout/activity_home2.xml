@@ -12,7 +12,7 @@
         android:layout_width="150dp"
         android:layout_height="150dp"
         android:layout_centerHorizontal="true"
-        android:src="@drawable/pom"
+        android:src="@drawable/dap"
         android:layout_marginTop="50dp"
         app:civ_border_color="#fff"
         app:civ_border_width="2dp" />
@@ -25,7 +25,7 @@
         android:layout_height="wrap_content"
         android:layout_below="@+id/profile_image"
         android:layout_marginTop="20dp"
-        android:paddingLeft="12dp"
+        android:paddingStart="12dp"
         android:text="@string/nama"
         android:textColor="@color/colorTextView"/>
 
@@ -35,38 +35,19 @@
         android:layout_height="wrap_content"
         android:layout_below="@id/textNama"
         android:layout_marginTop="10dp"
-        android:paddingLeft="12dp"
+        android:paddingStart="12dp"
         android:textColor="@color/colorTextView2"
         android:text="@string/nama"
         />
 
-    <TextView
-        android:id="@+id/textTgl"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/textNama1"
-        android:layout_marginTop="20dp"
-        android:paddingLeft="12dp"
-        android:text="@string/tanggal_lahir"
-        android:textColor="@color/colorTextView"/>
-
-    <TextView
-        android:id="@+id/textTgl1"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_below="@id/textTgl"
-        android:layout_marginTop="10dp"
-        android:paddingLeft="12dp"
-        android:textColor="@color/colorTextView2"
-        android:text="@string/tanggal_lahir"/>
 
     <TextView
         android:id="@+id/textAlm"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/textTgl1"
+        android:layout_below="@+id/textNama1"
         android:layout_marginTop="20dp"
-        android:paddingLeft="12dp"
+        android:paddingStart="12dp"
         android:text="@string/alamat"
         android:textColor="@color/colorTextView"/>
 
@@ -76,7 +57,7 @@
         android:layout_height="wrap_content"
         android:layout_below="@id/textAlm"
         android:layout_marginTop="10dp"
-        android:paddingLeft="12dp"
+        android:paddingStart="12dp"
         android:textColor="@color/colorTextView2"
         android:text="@string/alamat"/>
 
@@ -86,7 +67,7 @@
         android:layout_height="wrap_content"
         android:layout_below="@+id/textAlm1"
         android:layout_marginTop="20dp"
-        android:paddingLeft="12dp"
+        android:paddingStart="12dp"
         android:text="@string/agama"
         android:textColor="@color/colorTextView"/>
 
@@ -96,7 +77,7 @@
         android:layout_height="wrap_content"
         android:layout_below="@id/textAgm"
         android:layout_marginTop="10dp"
-        android:paddingLeft="12dp"
+        android:paddingStart="12dp"
         android:textColor="@color/colorTextView2"
         android:text="@string/agama"/>
 
@@ -106,7 +87,7 @@
         android:layout_height="wrap_content"
         android:layout_below="@+id/textAgm1"
         android:layout_marginTop="20dp"
-        android:paddingLeft="12dp"
+        android:paddingStart="12dp"
         android:text="@string/nomor_hp"
         android:textColor="@color/colorTextView"/>
 
@@ -116,37 +97,37 @@
         android:layout_height="wrap_content"
         android:layout_below="@id/textHP"
         android:layout_marginTop="10dp"
-        android:paddingLeft="12dp"
+        android:paddingStart="12dp"
         android:textColor="@color/colorTextView2"
         android:text="@string/nomor_hp"/>
 
     <TextView
-        android:id="@+id/textNIK"
+        android:id="@+id/textPendTer"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@+id/textHP1"
         android:layout_marginTop="20dp"
-        android:paddingLeft="12dp"
-        android:text="@string/nik"
+        android:paddingStart="12dp"
+        android:text="@string/pendidikan_terakhir"
         android:textColor="@color/colorTextView"/>
 
     <TextView
-        android:id="@+id/textNIK1"
+        android:id="@+id/textPendTer1"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@id/textNIK"
+        android:layout_below="@id/textPendTer"
         android:layout_marginTop="10dp"
-        android:paddingLeft="12dp"
+        android:paddingStart="12dp"
         android:textColor="@color/colorTextView2"
-        android:text="@string/nik"/>
+        android:text="@string/pendidikan_terakhir"/>
 
     <TextView
         android:id="@+id/textPk"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/textNIK1"
+        android:layout_below="@+id/textPendTer1"
         android:layout_marginTop="20dp"
-        android:paddingLeft="12dp"
+        android:paddingStart="12dp"
         android:text="@string/pekerjaan"
         android:textColor="@color/colorTextView"/>
 
@@ -156,7 +137,7 @@
         android:layout_height="wrap_content"
         android:layout_below="@id/textPk"
         android:layout_marginTop="10dp"
-        android:paddingLeft="12dp"
+        android:paddingStart="12dp"
         android:textColor="@color/colorTextView2"
         android:text="@string/pekerjaan"/>
 
