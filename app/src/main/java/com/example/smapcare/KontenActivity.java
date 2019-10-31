@@ -3,7 +3,10 @@ package com.example.smapcare;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
+import android.widget.LinearLayout;
 import android.widget.ListView;
+
+
 
 public class KontenActivity extends AppCompatActivity {
 String [] judulKonten={
@@ -26,5 +29,11 @@ ListView lv_konten;
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_konten);
+        lv_konten =findViewById(R.id.lv_konten);
+        Adapter adapter = new Adapter(this, judulKonten);
+        lv_konten.setAdapter(adapter);
+
+
+
     }
 }
