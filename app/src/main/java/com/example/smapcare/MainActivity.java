@@ -3,10 +3,12 @@
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
+import android.graphics.Color;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.TextView;
 
  public class MainActivity extends AppCompatActivity {
     EditText user, password;
@@ -28,5 +30,10 @@ import android.widget.EditText;
 
             }
         });
+    }
+
+    public void perform_action(View v) {
+       Intent intent = new Intent(MainActivity.this,FormActivity.class);
+       startActivity(intent);
     }
 }
