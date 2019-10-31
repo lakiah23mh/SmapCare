@@ -85,9 +85,10 @@
         android:layout_marginTop="90dp"
         android:text="Daftar disini!"
         android:textColor="#BA68C8"
-        android:textSize="16dp"
+        android:textSize="16sp"
+        android:clickable="true"
         android:onClick="perform_action"
-        android:clickable="true"/>
+        android:focusable="true" />
 
 
 </RelativeLayout>
