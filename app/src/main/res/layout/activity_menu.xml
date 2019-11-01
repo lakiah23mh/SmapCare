@@ -4,31 +4,53 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/colorPrimary"
+    android:background="#f7f7f7"
     tools:context=".MenuActivity"
     android:orientation="vertical"
     android:gravity="center">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="50dp"
+        android:gravity="center_horizontal"
+        android:layout_marginBottom="20dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="30sp"
+            android:text="Hi, Ibu Annisa!"
+            android:textColor="@color/colorTextView2"
+            android:textStyle="bold"/>
+
+    </LinearLayout>
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="150dp"
         android:orientation="horizontal"
         android:gravity="center"
-        android:layout_marginBottom="15dp">
+        android:layout_marginBottom="20dp">
         <Button
+            android:textStyle="bold"
             android:layout_width="150dp"
             android:layout_height="150dp"
-            android:id="@+id/btn_1"
+            android:id="@+id/btn_profil"
             android:layout_marginRight="10dp"
             android:background="@drawable/button_home"
-            android:gravity="center">
+            android:paddingTop="25dp"
+            android:drawableTop="@drawable/ic_profile">
         </Button>
 
         <Button
+            android:drawableTop="@drawable/ic_notif"
             android:layout_width="150dp"
             android:layout_height="150dp"
-            android:id="@+id/btn_2"
+            android:id="@+id/btn_notif"
             android:layout_marginLeft="10dp"
-            android:background="@drawable/button_home">
+            android:paddingTop="25dp"
+            android:background="@drawable/button_home2">
         </Button>
     </LinearLayout>
 
@@ -40,16 +62,20 @@
         <Button
             android:layout_width="150dp"
             android:layout_height="150dp"
-            android:id="@+id/btn_3"
+            android:id="@+id/btn_report"
             android:layout_marginRight="10dp"
-            android:background="@drawable/button_home">
+            android:background="@drawable/button_home2"
+            android:drawableTop="@drawable/ic_assignment_black_24dp"
+            android:paddingTop="25dp">
         </Button>
         <Button
             android:layout_width="150dp"
             android:layout_height="150dp"
-            android:id="@+id/btn_4"
+            android:id="@+id/btn_chat"
             android:layout_marginLeft="10dp"
-            android:background="@drawable/button_home">
+            android:background="@drawable/button_home"
+            android:drawableTop="@drawable/ic_chat"
+            android:paddingTop="25dp">
         </Button>
     </LinearLayout>
 
@@ -58,20 +84,24 @@
         android:layout_height="150dp"
         android:orientation="horizontal"
         android:gravity="center"
-        android:layout_marginTop="15dp">
+        android:layout_marginTop="20dp">
         <Button
             android:layout_width="150dp"
             android:layout_height="150dp"
-            android:id="@+id/btn_5"
+            android:id="@+id/btn_konten"
             android:layout_marginRight="10dp"
-            android:background="@drawable/button_home">
+            android:background="@drawable/button_home"
+            android:drawableTop="@drawable/ic_library_books"
+            android:paddingTop="25dp">
         </Button>
         <Button
             android:layout_width="150dp"
             android:layout_height="150dp"
-            android:id="@+id/btn_6"
+            android:id="@+id/btn_info"
             android:layout_marginLeft="10dp"
-            android:background="@drawable/button_home">
+            android:background="@drawable/button_home2"
+            android:drawableTop="@drawable/ic_info"
+            android:paddingTop="25dp">
         </Button>
     </LinearLayout>
 </LinearLayout>
