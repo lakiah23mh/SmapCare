@@ -48,39 +48,32 @@ public class KontenActivity extends Activity {
                 intent.putExtra("movetosubjudul",listDataChild.get(listDataHeader.get(groupPosition)).get(childPosition));
                 intent.putExtra("movetodeskripsi", listDeskripsi.get(listTemp.get(groupPosition)).get(childPosition));
                 startActivity(intent);
-                Toast.makeText(
-                        getApplicationContext(),
-                        listDataHeader.get(groupPosition)
-                                + " : "
-                                + listDataChild.get(
-                                listDataHeader.get(groupPosition)).get(
-                                childPosition), Toast.LENGTH_SHORT)
-                        .show();
+
                 return false;
             }
         });
 
         // Listview Group expanded listener
-        expListView.setOnGroupExpandListener(new ExpandableListView.OnGroupExpandListener() {
-
-            @Override
-            public void onGroupExpand(int groupPosition) {
-                Toast.makeText(getApplicationContext(),
-                        listDataHeader.get(groupPosition) + " Expanded",
-                        Toast.LENGTH_SHORT).show();
-            }
-        });
+//        expListView.setOnGroupExpandListener(new ExpandableListView.OnGroupExpandListener() {
+//
+//            @Override
+//            public void onGroupExpand(int groupPosition) {
+//                Toast.makeText(getApplicationContext(),
+//                        listDataHeader.get(groupPosition) + " Expanded",
+//                        Toast.LENGTH_SHORT).show();
+//            }
+//        });
         // Listview Group collasped listener
-        expListView.setOnGroupCollapseListener(new ExpandableListView.OnGroupCollapseListener() {
-
-            @Override
-            public void onGroupCollapse(int groupPosition) {
-                Toast.makeText(getApplicationContext(),
-                        listDataHeader.get(groupPosition) + " Collapsed",
-                        Toast.LENGTH_SHORT).show();
-
-            }
-        });
+//        expListView.setOnGroupCollapseListener(new ExpandableListView.OnGroupCollapseListener() {
+//
+//            @Override
+//            public void onGroupCollapse(int groupPosition) {
+//                Toast.makeText(getApplicationContext(),
+//                        listDataHeader.get(groupPosition) + " Collapsed",
+//                        Toast.LENGTH_SHORT).show();
+//
+//            }
+//        });
     }
 
 
@@ -219,9 +212,109 @@ public class KontenActivity extends Activity {
         des1.add("Membedong adalah praktek membungkus bayi dengan menggunakan kain.\n\nBedong bukan" +
                 " perangkat meluruskan kaki tetapi hanyalah salah cara untuk menghindari bayi dari " +
                 "kedinginan.");
-        des1.add()
+        des1.add("Tali pusat dalam keadaan bersih, terbuka dan kering agar kuman tetanus tidak dapat" +
+                " hidup. Jangan membubuhi apapun pada pangkal tali pusat (termasuk alkohol dan " +
+                "povidon yodium) agar lekas kering dan lepas.\n\nBila tali pusat terlihat kotor, " +
+                "bersihkan tali pusat dengan air bersih dan sabun mandi, lalu segera keringkan " +
+                "dengan kain bersih. Cuci tangan sebelum dan sesudah memegang bayi.\n\nBila tali " +
+                "pusat basah, berbau atau dinding perut disekitarnya kemerahan harus segera dibawa " +
+                "ke petugas kesehatan, poskesdes, puskesmas atau fasilitas kesehatan yang lain.");
+
         List<String> des2 = new ArrayList<>();
+        des2.add("Tanda infeksi pada tali pusat antara lain tali pusat tercium bau dan dapat " +
+                "terlihat nanah, tampak kemerahan pada kulit sekeliling tali pusat, nyeri tekan di " +
+                "sekitar pusat, dan dapat diikuti dengan demam.\n\nApabila ditemukan adanya infeksi" +
+                " pada tali pusat, langkah pertama yang dapat dilakukan di rumah adalah jangan " +
+                "panik, bersihkan ujung tali pusat menggunakan alkohol swab 70%, bayi tetap diminumkan " +
+                "ASI selama bayi sadar, dan segera dibawa ke dokter untuk mendapatkan penanganan " +
+                "lebih lanjut. Pemakaian popok di bawah tali pusat. ");
+        des2.add("Kuning menandakan tingginya zat bilirubin dalam darah yang dapat terjadi secara " +
+                "normal untuk hari-hari awal kelahiran namun dapat pula mendandakan bahaya bila " +
+                "terjadi dalam waktu lama atau lebih dari satu minggu.");
+        des2.add("Dehidrasi pada bayi bisa disebabkan oleh banyak hal, misalnya terlalu lama berada " +
+                "di luar ruangan dalam cuaca panas ataupun saat bayi mengalami diare.\n\nTanda-tanda " +
+                "dehidrasi pada bayi:Mata bayi terlihat cekung; frekuensi buang air kecil <8 x/ hari, " +
+                "Air seni tampak berwarna kuning gelap dan kental; Mulut kering dan bibir pecah-pecah;" +
+                " Lesu dan Lemah; Bagian lunak di ubun-ubun bayi terlihat cekung atau tenggelam.");
+        des2.add("Tanda ini dapat menunjukkan adanya gangguan pada reflek menghisap pada mulut bayi," +
+                " gangguan pada saluran cerna bayi, dan kandungan ASI (jarang terjadi) atau susu " +
+                "formula yang dikonsumsi bayi yang tidak dapat dicerna oleh bayi.");
+        des2.add("Kejang merupakan salah satu tanda dari infeksi tetanus  menyerang pada bayi baru " +
+                "lahir.\n\nHal ini sangat berbahaya bagi bayi bahkan dapat menyebabkan kematian jika" +
+                " tidak ditangani dengan segera.\n\nSaat bayi mengalami kejang, pastikan jalan nafas" +
+                " bayi tidak mengalami sumbatan (lidah bayi tidak menutupi saluran pernafasan)\n\nsegera " +
+                "bawa bayi ke fasilitas kesehatan bila terjadi kejang");
+        des2.add("Demam dapat terjadi pada bayi baru lahir yang merupakan tanda umum adanya infeksi " +
+                "dan dapat disertai dengan tanda bahaya lain yang muncul bersamaan atau belakangan.\n\n" +
+                "Jika tubuh bayi dingin, maka ini perlu penanganan segera di fasilitas kesehatan " +
+                "karena menandakan aliran darah yang terganggu yang biasanya diiringi warna pucat " +
+                "pada kedua ujung tangan dan kaki.\n\nPenanganan pertama bayi kedinginan: \nJaga " +
+                "kehangatan dengan tetap memberikan asi dan selimut  lalu segera bawa ke fasilitas " +
+                "kesehatan terdekat  ");
+        des2.add("Merupakan tanda adanya gangguan pada sistem pernafasan bayi. \u2028Dapat disertai " +
+                "dengan tanda bahaya lain seperti demam. Penghitungan nafas bayi dapat dilakukan " +
+                "dengan menghitung pergerakan dada atau perut bayi dalam 60 detik. Tarikan dinding " +
+                "dada yang sangat kuat menandakan adanya gangguan pada sistem pernafasan pada bayi.\n\n" +
+                "Segera bawa bayi ke fasilitas kesehatan terdekat untuk mendapatkan penanganan lebih lanjut.");
+        des2.add("Jika bibir bayi Anda terlihat kebiruan, atau membran mukus di dalam mulutnya atau " +
+                "pada lidahnya berubah biru, ini bisa jadi tanda bahwa si bayi tidak mendapatkan " +
+                "oksigen yang cukup.\n\nKondisi ini disebut sianosis.\n\nSaat ini terjadi, segeralah " +
+                "ke dokter atau panggil ambulans ");
+
         List<String> des3 = new ArrayList<>();
+        des3.add("Batuk dan pilek merupakan penyakit yang lazim terjadi pada bayi\n\nDapat disebabkan " +
+                "infeksi dan alergi\n\nBatuk pilek karena infeksi bisa disertai gejala demam, " +
+                "hidung meler atau tersumbat (kerap disertai dengan ingus), batuk, bersin, nyeri " +
+                "otot, sakit kepala, dan mata berair\n\nBiasanya penyebaran infeksi bisa melalui bersin," +
+                " batuk, dan kontak tangan.\n\nBatuk-pilek bisa saja terjadi pada bayi yang baru " +
+                "lahir, biasanya berlangsung antara 2-3 hari dengan penyebab tersering adalah virus, " +
+                "tetapi bila terjadi lebih dari 1 minggu, ada kemungkinan terjadi infeksi bakteri " +
+                "lanjutan atau disebabkan alergi.\n\nApabila batuk pilek disertai dengan nafas cepat" +
+                " dan tarikan dinding dada masuk ekdalam, segera bawa bayi ke fasilitas kesehatan.\n\n" +
+                "Apabila batuk lebih dari 14 hari, kunjungi ulang fasilitas kesehatan untuk " +
+                "menentukan penyebab lain dari batuk.");
+        des3.add("Demam dapat terjadi pada bayi yang merupakan tanda umum adanya infeksi dan dapat " +
+                "disertai dengan tanda bahaya lain yang muncul bersamaan atau belakangan\n\nBila " +
+                "suhu bayi >38.5 0C, ibu dapat memberikan obat penurun panas sesuai dengan dosis " +
+                "yang dianjurkan oleh dokter.\n\nIbu juga dapat memberikan kompres pada dahi, " +
+                "ketiak, atau selangkangan.\n\nSelalu pantau suhu tubuh bayi anda. Panas yang " +
+                "terlalu tinggi dapat menyebabkan kejang pada bayi.\n\nSegera bawa bayi ke fasilitas " +
+                "kesehatan bila terjadi kejang. Pastikan jalan nafas pada bayi tidak mengalami " +
+                "sumbatan.\n\nBila bayi demam/panas disertai kaku pada kuduk, segera bawa bayi ke " +
+                "fasilitas kesehatan.");
+        des3.add("Diare merupakan kondisi bayi ketika mengeluarkan feses yang cair dan lebih " +
+                "sering dari biasanya.\n\nDiare dapat terjadi karena infeksi virus, bakteri ataupun " +
+                "tanda gejala suatu penyakit.\n\nTetap berikan ASI selama bayi diare.\n\n" +
+                "Segera bawa ke fasilitas kesehatan bila menemukan tinja bayi berlendir, berdarah, berbau busuk.\n\n" +
+                "Segera bawa ke fasilitas kesehatan bila bayi anda menunjukkan tanda dehidrasi (mata cekung, ubun ubun cekung, cubitan kulit perut kembalinya sangat lambat), bayi rewel, dan demam tinggi.");
+        des3.add("Mengatasi sembelit pada bayi yng masih mendapatkan ASI dapat dilakukan dengan mengubah asupan makanan ibu.\n\n" +
+                "Ibu dapat memperbanyak makan sayuran berserat dan buah buahan.\n\n" +
+                "Untuk bayi yang mendapatkan susu formula, sembelit dapat disebabkan susu formula yang tiak cocok. Coba untuk mengganti merk susu formula.");
+        des3.add("HIV atau sering juga disebut dengan Human immunodefisiensi virus. Merupakan penyakit yang menyerang sistem kekebalan tubuh.\n\n" +
+                "Bayi baru lahir dapat tertular HIV melalui ibunya (proses kehamilan dan persalinan).\n\n" +
+                "Bayi yang dilahirkan dari ibu positif HIV, dianjurkan untuk tidak diberikan ASI ibunya.\n\n" +
+                "Ibu dengan positif HIV belum tentu menularkan kepada bayinya.\n\n" +
+                "Bayi yang dilahirkan dari ibu yang terinfeksi HIV diberikan obat antiretroviral selama 4 hingga 6 minggu untuk meminimalkan penularan HIV.\n\n" +
+                "Untuk mengetahui apakah bayi tertular HIV atau tidak, dapat dilakukan tes darah pada bayi. Tes darah ini akan diulang hingga bayi berusia 1.5 atau 2 tahun, untuk memastikan apakah bayi terbebas dari HIV atau tidak .\n\n" +
+                "Tes darah perlu diulang karena antibodi maternal yang diturunkan kepada bayi berangsur angsur akan hilang saat bayi berusia 1.5 atau 2 tahun.");
+        des3.add("HbSAg merupakan salah satu jenis penyakt hati/hepatitis B.\n\n" +
+                "Bayi dapat tertular HbSAg dari ibunya melalui proses pesalinan.\n\n" +
+                "Bayi yang dilahirkan dengan ibu yang positif menderita HbSAg, segera setelah lahir diberikan suntikan untuk menekan jumlah virus hepatititis dalam darah bayi.");
+        des3.add("Bayi kerap mengalami perut kembung karena saluran pencernaan belum bekerja sempurna.\n\n" +
+                "Bayi kembung juga dapat disebabkan karena intoleransi laktosa pada susu sapi\n\n" +
+                "Jika hal demikian yang terjadi, konsultasikan kepada dokter spesialis anak untuk mendapatkan susu pengganti.\n\n" +
+                "Cara menangani perut kembung:\n" +
+                "Posisikan kepala bayi lebih tinggi dari perut ketika menyusu,  Pastikan mulut bayi melekat sempurna ketika menyusu secara langsung pada payudara, Jika menggunakan botol, pilihlah botol susu yang mencegah timbulnya gelembung udara, Setelah menyusu, gendong bayi dalam posisi tegak untuk membantu mengeluarkan udara dari saluran cernanya.");
+        des3.add("Kerak kepala pada bayi dapat disebabkan karena hormone yang diterima bayi dari ibu di akhir masa kehamlan yang banyak merangsang kelenjar penghasil minyak.\n\n" +
+                "Umumnya kerak kepala dapat hilang sendiri tanpa pengobatan dalam jangka waktu tertentu.\n\n" +
+                "Lakukan pencegahan dan perawatan dengan menggosok perlahan kulit kepala dengan tangan ataupun kain untuk meluruhkan kerak. Cuci rambut bayi dengan sampo formulasi ringan. Hubungi dokter apabila masalah berlanjut setelah dilakukan langkah untuk mengatasinya.");
+        des3.add("Lidah putih pada bayi dapat disebabkan oleh jamur.\n\n" +
+                "Jamur dapat tumbuh pada lidah bayi disebabkan sisa ASI/susu formula.\n\n" +
+                "Jamur pada lidah bayi dapat menyebabkan bayi tidak mau menyusu, dalam jangka panjang dapat menyebabkan bayi diare.\n\n" +
+                "Cara mengobati lidah putih:\n" +
+                "Cuci tangan sebelum mengobati bayi, Bersihkan mulut bayi dengan ujung jari yang terbungkus kain" +
+                " bersih dan telah dicelupkan ke larutan air matang hangat " +
+                "bergaram (1 gelas air hangat ditambah seujung sdt garam), Teteskan 1 ml suspensi nistatin di mulut 4 kali sehari,  Cuci tangan kembali");
         List<String> des4 = new ArrayList<>();
         List<String> des5 = new ArrayList<>();
         List<String> des6 = new ArrayList<>();
@@ -232,6 +325,15 @@ public class KontenActivity extends Activity {
 
 
         listDeskripsi.put(listTemp.get(0),des1);
+        listDeskripsi.put(listTemp.get(1),des2);
+        listDeskripsi.put(listTemp.get(2),des3);
+        listDeskripsi.put(listTemp.get(3),des4);
+        listDeskripsi.put(listTemp.get(4),des5);
+        listDeskripsi.put(listTemp.get(5),des6);
+        listDeskripsi.put(listTemp.get(6),des7);
+        listDeskripsi.put(listTemp.get(7),des8);
+        listDeskripsi.put(listTemp.get(8),des9);
+        listDeskripsi.put(listTemp.get(9),des10);
 
 
     }
