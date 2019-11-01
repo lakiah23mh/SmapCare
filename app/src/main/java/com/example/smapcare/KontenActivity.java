@@ -3,6 +3,7 @@ package com.example.smapcare;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.app.Activity;
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.ExpandableListView;
@@ -18,6 +19,8 @@ public class KontenActivity extends Activity {
     ExpandableListView expListView;
     List<String> listDataHeader;
     HashMap<String, List<String>> listDataChild;
+    List<String> listTemp;
+    HashMap<String, List<String>> listDeskripsi;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -41,6 +44,10 @@ public class KontenActivity extends Activity {
             @Override
             public boolean onChildClick(ExpandableListView parent, View v,
                                         int groupPosition, int childPosition, long id) {
+                Intent intent = new Intent(KontenActivity.this, DeskripsiActivity.class);
+                intent.putExtra("movetosubjudul",listDataChild.get(listDataHeader.get(groupPosition)).get(childPosition));
+                intent.putExtra("movetodeskripsi", listDeskripsi.get(listTemp.get(groupPosition)).get(childPosition));
+                startActivity(intent);
                 Toast.makeText(
                         getApplicationContext(),
                         listDataHeader.get(groupPosition)
@@ -81,6 +88,8 @@ public class KontenActivity extends Activity {
      * Preparing the list data
      */
     private void prepareListData() {
+        listTemp= new ArrayList<String>();
+        listDeskripsi= new HashMap<String, List<String>>();
         listDataHeader = new ArrayList<String>();
         listDataChild = new HashMap<String, List<String>>();
 
@@ -184,6 +193,47 @@ public class KontenActivity extends Activity {
         listDataChild.put(listDataHeader.get(7), menu8);
         listDataChild.put(listDataHeader.get(8), menu9);
         listDataChild.put(listDataHeader.get(9), menu10);
+
+
+        listTemp.add("1");
+        listTemp.add("2");
+        listTemp.add("3");
+        listTemp.add("4");
+        listTemp.add("5");
+        listTemp.add("6");
+        listTemp.add("7");
+        listTemp.add("8");
+        listTemp.add("9");
+        listTemp.add("10");
+
+        List<String> des1 = new ArrayList<>();
+        des1.add("Memandikan bayi merupakan upaya yang dilakukan untuk menjaga agar tubuh bayi " +
+                "bersih, terasa segar, dan mencegah kemungkinan adanya infeksi\n\n" +
+                "Bayi dimandikan paling cepat 6 jam setelah lahir.\n\nCara memandikan :Bayi mandi " +
+                "dengan air hangat, untuk menghindari suhu tubuhnya turun yang dapat berbahaya bagi" +
+                " bayi. Mandikan dengan cepat, bersihkan muka, leher dan ketiak dengan air dan " +
+                "sabun. Keringkan seluruh tubuh dengan cepat. Bayi tidak boleh dibedong, cukup" +
+                " dipakaikan baju, topi, kaus kaki dan diselimuti sehingga terjaga kehangatannya. " +
+                "Jangan memandikan bayi jika demam atau pilek.\n\n" +
+                "Bayi umur 1-7 hari dimandikan cukup 1 kali dalam sehari, menjelang siang hari. ");
+        des1.add("Membedong adalah praktek membungkus bayi dengan menggunakan kain.\n\nBedong bukan" +
+                " perangkat meluruskan kaki tetapi hanyalah salah cara untuk menghindari bayi dari " +
+                "kedinginan.");
+        des1.add()
+        List<String> des2 = new ArrayList<>();
+        List<String> des3 = new ArrayList<>();
+        List<String> des4 = new ArrayList<>();
+        List<String> des5 = new ArrayList<>();
+        List<String> des6 = new ArrayList<>();
+        List<String> des7 = new ArrayList<>();
+        List<String> des8 = new ArrayList<>();
+        List<String> des9 = new ArrayList<>();
+        List<String> des10 = new ArrayList<>();
+
+
+        listDeskripsi.put(listTemp.get(0),des1);
+
+
     }
 }
 
