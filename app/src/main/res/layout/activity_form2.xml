@@ -1,10 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_form2"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context=".FormActivity">
+    android:layout_height="match_parent">
 
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/input1"
@@ -17,13 +16,13 @@
         android:paddingLeft="20dp"
         android:paddingRight="20dp">
 
-    <EditText
-        android:id="@+id/formNama"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:hint="Nama Lengkap"
-        android:inputType="text"
-        android:textSize="20sp"/>
+        <EditText
+            android:id="@+id/formNama"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Nama Lengkap"
+            android:inputType="text"
+            android:textSize="20sp"/>
 
     </com.google.android.material.textfield.TextInputLayout>
 
@@ -39,11 +38,26 @@
         android:paddingRight="20dp"
         android:textColorHint="@color/colorTextView">
 
-        <EditText
-            android:id="@+id/formUsername"
+        <Button
+            android:id="@+id/btnOpenDatePicker"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="Username"
+            android:text="open date picker"/>
+
+        <TextView
+            android:id="@+id/tvTanggal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:textSize="20sp"
+            android:layout_gravity="center"
+            tools:text="Kamu memilih tanggal"/>
+
+        <EditText
+            android:id="@+id/formTempatlahir"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Tempat Lahir"
             android:inputType="text"
             android:textSize="20sp" />
 
@@ -142,6 +156,5 @@
         android:layout_marginEnd="35dp"
         android:layout_marginBottom="29dp"
         android:text="Next" />
-
 
 </RelativeLayout>
