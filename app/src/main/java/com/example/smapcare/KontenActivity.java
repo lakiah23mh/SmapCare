@@ -1,13 +1,12 @@
 package com.example.smapcare;
 
-import androidx.appcompat.app.AppCompatActivity;
 
 import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.ExpandableListView;
-import android.widget.Toast;
+
 
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -315,13 +314,130 @@ public class KontenActivity extends Activity {
                 "Cuci tangan sebelum mengobati bayi, Bersihkan mulut bayi dengan ujung jari yang terbungkus kain" +
                 " bersih dan telah dicelupkan ke larutan air matang hangat " +
                 "bergaram (1 gelas air hangat ditambah seujung sdt garam), Teteskan 1 ml suspensi nistatin di mulut 4 kali sehari,  Cuci tangan kembali");
+
         List<String> des4 = new ArrayList<>();
+        des4.add("Pada hari pertama dan kedua paska melahirkan, ASI biasanya belum keluar. Bila ibu memencet putting payudara, akan keluar sedikit cairan berwarna kekuningan. Cairan ini disebut kolostrum. ASI belum keluar lancar pada hari pertama dan kedua merupakan hal yang normal.\n\n" +
+                "Untuk merangsang produksi ASI, ibu tetap mencoba menyusui bayi sesering meungkin. Semakin sering bayi menghisap, semakin merangsang produksi ASI.\n\n" +
+                "Selain itu, ibu dapat menambah porsi makan, memperbanyak sayuran hijau, minum air putih minimal 8 gelas sehari, cukup istirahat dan menghindari stress.");
+        des4.add("Bila payudra teraba keras, terasa nyeri, dan kulit payudara berwarna memerah dan mengkilat, kemungkinan ibu mengalami mastitis, segera periksa ke fasilitas kesehatan terdekat.\n\n" +
+                "Bila payudara teraba keras, namun tidak disertai kulit berwarna merah dan mengkilat, ibu dapat melakukan perawatan payudara.\n\n" +
+                "Cara melakukan pijat payudara:\nTangan dilicinkan dengan minyak kelapa / baby oil. Pengurutan    payudara  mulai  dari  pangkal  menuju  arah  putting  susu selama 2 menit (10kali) untuk masing-masing payudara.\n\n" +
+                "Pengurutan yang pertama:\nLicinkan   kedua   tangan   dengan   minyak, pengurutan  dimulai dari arah atas  lalu  arak  sisi  samping  kiri kemudian  kearah kanan,  lakukan  terus pengurutan  kebawah  atau  melintang.  Lalu  kedua  tangan  dilepas  dari payudara, ulangi gerakan 20-30 kali untuk setiap satu payudara.\n\n" +
+                "Pengurutan yang kedua:\nMenyokong payudara kiri dengan  tangan kiri, kemudian dua atau tiga jari  tangan  kanan  mulai  dari  pangkal  payudara  dan  berakhir  pada puting susu. Lakukan tahap mengurut payudara dengan sisi kelingking dari arah tepi kearah putting susu. Lakukan gerakan 20-30 kali.\n\n" +
+                "Pengurutan yang ketiga:\nMenyokong  payudara  dengan  satu  tangan,  sedangkan  tangan  lain mengurut  dan  menggenggam  dari  pangkal  menuju  ke  putting  susu. Langkah gerakan 20-30 kali.\n\n");
+        des4.add("Lidah bayi yang kasar dapat mengkibatkan putting susu lecet.\n\n" +
+                "Untuk mencegah putting lecet, sebelum menyusui, oleskan terlebih dahulu sedikit ASI pada putting ibu. Biarkan bayi menyusu hingga melepaskan sendiri putting ibu.\n\n" +
+                "Puting lecet juga dapat diakibatkan oleh posisi menyusui bayi yang salah. Cek perlekatan bayi. Sebagian besar daerah berwarna hitam di sekitar payudra harus masuk ke dalam mulut bayi.");
+        des4.add("Perubahan mood/suasana hati pada ibu setelah melahirkan merupakan hal yang normal. Keadaan ini sering disebut dengan baby blues.\n\n" +
+                "Perubahan kadar hormon merupakan penyebab ibu mengalami baby blus.\n\n" +
+                "Gejala yang muncul bisa berupa perasaan gelisah, marah, panik, lelah atau sedih.\n\n" +
+                "Umumnya kondisi ini hilang dalam beberapa hari atau minggu. Bila perasaan tersebut tak juga hilang, bahkan disertai rasa benci, keinginan bunuh diri, juga halusinasi, kemungkinan Anda mengalami depresi pascamelahirkan. Kondisi ini tergolong berbahaya dan perlu segera mendapat penanganan.");
+        des4.add("Nyeri episiotomi disebabkan karena perlukaan jalan lahir saat proses persalinan.\n\n" +
+                "Bila nyeri terjadi dalam 24 jam pertama setelah melahirkan, ibu dapat menggunakan bantalan yang berisi es untuk mengompres daerah tersebut. Pastikan tidak melakukan kompres lebih dari 15 menit agar ibu tidak kedinginan.\n\n" +
+                "Bila nyeri terjadi setelah 24 jam setelah melahirkan, ibu dapat berkonsultasi dengan dokter untuk melakukan rendam duduk (Sitz bath) dengan menggunakan air hangat.\n\n" +
+                "Untuk mempercepat penyembuhan luka episiotomi, selalu jaga kebersihan area tersebut dengan cara sering mengganti pembalut, makan makanan bergizi.");
+        des4.add("Wasir atau ambeyen dapat terjadi pada kehamilan ataupun setelah melahirkan.\n\n" +
+                "Tekanan pada perineum (area di antara lubang vagina dan anus) selama kehamilan atau setelah melahirkan membuat ibu  lebih mungkin mengalami wasir. Saat hamil, rahim ibu  terus membesar sehingga memberi tekanan pada vena besar di sisi kanan tubuh yang menerima darah dari kaki. Tekanan ini kemudian dapat memperlambat kembalinya darah dari bagian bawah tubuh, sehingga meningkatkan tekanan pada pembuluh darah di bawah rahim dan menyebabkannya menjadi besar.\n\n" +
+                "Selain itu, peningkatan hormon progesteron selama kehamilan juga menyebabkan dinding pembuluh darah berelaksasi, sehingga pembuluh darah lebih mudah menjadi bengkak. Hormon progesteron juga dapat menyebabkan sembelit dengan cara memperlambat pergerakan usus . Sembelit saat hamil atau setelah melahirkan dapat menyebabkan tekanan pada pembuluh darah, sehingga bisa berkembang menjadi atau memperburuk wasir. ibu  juga bisa mengembangkan wasir karena Anda mengejan terlalu keras selama persalinan.\n\n" +
+                "Cara mengatasi wasir setelah melahirkan:\nJangan menahan BAB, ini dapat membuat feses Anda menjadi kering dan sulit untuk dikeluarkan. Juga, hindari mengejan terlalu keras saat buang air besar dan jangan buang air besar dalam waktu yang lama.\n" +
+                "Perbanyak konsumsi serat dan minum cukup air putih.\n" +
+                "Hindari duduk dan berdiri dalam waktu yang lama serta berbaringlah sebanyak yang ibu  bisa\n" +
+                "Saat ibu duduk, sebaiknya beri alas bantal untuk mengurangi tekanan pada rektum. Jangan duduk di kursi langsung, terutama pada permukaan kursi yang keras. Duduk di kursi goyang atau kursi malas mungkin lebih nyaman untuk ibu.\n" +
+                "Hindari makan goreng gorengan selama wasir.");
+
         List<String> des5 = new ArrayList<>();
+        des5.add("ASI adalah makanan terbaik bagi bayi. ASI eksklusif merupakan pemerian ASI saja kepada bayi selama minimal 6 bulan tanpa diberikan makanan tambahan apapun kecuali obat/imunisasi.");
+        des5.add("Teknik menyusui yan tepat dapat menunjang keberhasilan pemberian asi ekslusif.\n\n" +
+                "Perlekatan merupakan kunci sukses keberhasilan menyusui\n\n" +
+                "Tahapan perlekatan saat menyusui (latch on) yang tepat pada bayi sebagai cara menyusui yang benar adalah sebagai berikut: Usahakan untuk menjaga posisi telinga, bahu, serta pinggul bayi. Pastikan tubuhnya sejajar dengan tubuh Anda agar bayi bisa lebih mudah menelan selama menyusui.Usahakan agar posisi hidung bayi berhadapan langsung dengan puting payudara Anda, dan tidak tertekan. Pegang dagu bayi secara perlahan, kemudian bantu untuk membukanya sembari bibir bayi mendekati payudara untuk mulai menyusu. Arahkan puting payudara dan gesekkan atau sentuh perlahan bagian bibir bayi dengan menggunakan puting payudara Anda. Kemudian tunggu sampai bibir bayi terbuka lebar seola sedang menguap, sebagai pertanda telah siap untuk mengisap puting payudara. Bimbing bibir bayi menuju ke puting payudara, agar bayi bisa lebih mudah untuk mengisapnya. Usahakan bibir dan mulut bayi telah mengisap puting payudara Anda dengan baik dan benar.Tarik puting dari mulut bayi dan ulangi lagi " +
+                "tahapannya dari awal, bila bayi tidak bisa mengisapnya dengan tepat. Jika latch on tidak dilakukan dengan benar, biasanya Anda akan merasa nyeri atau sakit pada puting.\n\n" +
+                "Tanda perlekatan sudah benar yaitu: Dagu bayi menyentuh payudara ibu, Bibir bawah bayi terpuntir keluar, Mulut bayi terbuka lebar, Aerola bagian bawah lebih banyak yang masuk ke mulut bayi dibanding bagian atas, Bayi yang menyusu dengan baik akan mengisap dengan pelan, berirama, tidak tergesa-gesa dan tidak terdengar bunyi berdecak. Pipi bayi akan menggembung dan ibu tidak terasa sakit.\n\n" +
+                "Teknik menyusui yang benar adalah sebagai berikut: Bagi ibu menyusui, posisikan diri senyaman mungkin dan rilekskan diri Anda. Supaya lebih nyaman, Anda bisa bersandar atau ganjal tubuh dengan bantal. Setelah posisi ibu terasa nyaman, gendong dan pegang kepala bayi dengan satu tangan dan pertahankan posisi payudara ibu dengan tangan yang lainnya. Kemudian dekatkan wajah bayi ke arah payudara ibu. Pastikan tubuh bayi menempel sepenuhnya dengan tubuh ibu.Beri rangsangan pada daerah bibir bawah bayi dengan menggunakan puting susu ibu. Tujuannya agar mulut bayi terbuka lebar.Biarkan bayi memasukkan areola (seluruh bagian gelap di sekitar puting payudara ibu) ke dalam mulut bayi. Tahapan ini termasuk lacth on atau perlekatan saat menyusui.Bayi akan mulai menggunakan lidahnya untuk mengisap ASI. Ibu tinggal mengikuti irama menyedot dan menelan yang dilakukan bayi.Ketika ibu ingin menyudahi atau berpindah ke payudara yang lain, letakkan satu jari ibu ke sudut bibir bayi. " +
+                "Nantinya, bayi perlahan-lahan akan melepaskan isapannya.Hindari melepaskan mulut bayi atau menggeser payudara Anda secara tiba-tiba. Ditakutkan, hal ini malah akan membuat bayi rewel dan akan sulit menyusu lagi nantinya.Biarkan bayi mengatur sendiri kecepatannya saat menyusui. Perlu diingat, tidak ada batasan waktu yang pasti mengenai berapa lama bayi akan menyusui, karena masing-masing bayi memiliki waktu menyusui yang berbeda-beda. Hanya saja, memang biasanya bayi punya minimal waktu tertentu saat menyusu.Perpindahan payudara saat menyusui bisa Anda lakukan ketika payudara terasa lebih lunak setelah bayi menyusu. Ini karena ASI di dalam payudara tersebut telah diminum oleh bayi, sehingga terasa tidak lagi penuh. Tindakan menyusui secara bergantian dapat mencegah payudara yang belum dipakai untuk menyusui menjadi nyeri karena penuh terisi oleh ASI.");
+        des5.add("ASI dapat diperas dengan tangan, pompa manual, ataupun pompa listrik.\n\n" +
+                "Cara memeras ASI dengan tangan:\nLetakkanibu  jari di tepi atas kalang susu (jam 12.00). Letakkan jari telunjuk di tepi bawh kalang susu (jam 06.00) dan 3 jari lainnya  menyangga payudara. Dengan kedua jari, tekan jaringan payudara ke arah rongga dada. dengan gerakan ke depan, pijat kalang susu ke arah depan, sehingga asi keluar. putar posisi ibu jari dan telunjuk. misal ke arah jam 3 dan 9. ulangi gerakan mmeras.");
+        des5.add("ASI dapat disimpan di freezer ataupun di lemari es.\n\n" +
+                "ASI tahan 6-8 jam di udara luar.\n\n" +
+                "ASI tahan 24 jam dalam termos es.\n\n" +
+                "ASI tahan 2x24 jam dalam lemari es.\n\n" +
+                "ASI tahan 2 minggu di freezer lemari es satu pintu.\n\n" +
+                "ASI tahan hingga 3 bulan bila disimpan di freezer  lemari es 2 pintu.\n\n" +
+                "Sebelum disimpan di freezer, asi didinginkan terlebih dahulu mini8mal 30 menit di lemari es. Berikan label hari, tanggal, dan jam memerah.\n\n");
+        des5.add("Pijat oksitosin merupakan pijatan yang dilakukan di daerah sepanjang tulang belakang sebagai upaya untuk memperlancar pengeluaran ASI. Pijatan ini mampu memicu pengeluaran oksitosin, di mana oksitosin merupakan hormon yang diperlukan untuk mengeluarkan ASI.\n\n" +
+                "Manfaat pijat oksitosin yaitu meningktkan pengeluran hormon oksitosin dan prolaktin, serta meningkatkan letdown refleks.\n\n" +
+                "Cara melakukan pijat oksitosin:\nIbu berada dalam posisi duduk bersandar ke depan sambil memeluk bantal agar lebih nyaman. Taruh meja di depan Anda sebagai tempat untuk bersandar.\n" +
+                "Pijat kedua sisi tulang belakang menggunakan kepalan tangan dengan ibu jari menunjuk ke depan. Pijat kuat dengan gerakan melingkar.\n" +
+                "Pijat sisi tulang belakang ke arah bawah sampai sebatas dada, dari leher sampai ke tulang belikat.\n" +
+                "Lakukan pijatan ini selama 2-3 menit.\n\n" +
+                "Perawatan   payudara   sering   disebut Breast   Care bertujuan   untuk memelihara   kebersihan   payudara,   memperbanyak   atau   memperlancar pengeluaran  ASI.\n\n" +
+                "Cara melakukan pijat payudara:\nTangan dilicinkan dengan minyak kelapa / baby oil. Pengurutan    payudara  mulai  dari  pangkal  menuju  arah  putting  susu selama 2 menit (10kali) untuk masing-masing payudara.\n\n" +
+                "Pengurutan yang pertama:\nLicinkan   kedua   tangan   dengan   minyak, pengurutan  dimulai dari arah atas  lalu  arak  sisi  samping  kiri kemudian  kearah kanan,  lakukan  terus pengurutan  kebawah  atau  melintang.  Lalu  kedua  tangan  dilepas  dari payudara, ulangi gerakan 20-30 kali untuk setiap satu payudara.\n\n" +
+                "Pengurutan yang kedua:\nMenyokong payudara kiri dengan  tangan kiri, kemudian dua atau tiga jari  tangan  kanan  mulai  dari  pangkal  payudara  dan  berakhir  pada puting susu. Lakukan tahap mengurut payudara dengan sisi kelingking dari arah tepi kearah putting susu. Lakukan gerakan 20-30 kali.\n\n" +
+                "Pengurutan yang ketiga:/nMenyokong  payudara  dengan  satu  tangan,  sedangkan  tangan  lain mengurut  dan  menggenggam  dari  pangkal  menuju  ke  putting  susu. Langkah gerakan 20-30 kali.");
+        des5.add("Keluarkan ASI beku dari freezer. Simpan di lemari es hingga mencair. Setelah mencair, rendam ASI dalam air hangat hingga ASI terasa hangat/suam kuku. Cek terlebih dahulu suhu ASI sebelum diberikan pada bayi.\n\n" +
+                "Jangan menyimpan kembali asi yang sudah dicairkan kedalam lemari es.");
+        des5.add("Tanda asi cukup bila:\n" +
+                "Posisi menyusu benar.\n" +
+                "Buang air kecil 5-6 x/hari.\n" +
+                "BAB 2 x/hari.\n" +
+                "Bayi terlihat rileks dan puas setelah minum asi.\n" +
+                "paling baik bila bayi mengakhiri menyusu sendiri.");
+
         List<String> des6 = new ArrayList<>();
+        des6.add("Darah nifas yang keluar berwarna merah kecoklatan.\n");
+        des6.add("Darah nifas berwarna merah muda, kecoklatan.\n");
+        des6.add("Darah nifas berwarna merah muda, kecoklatan.\n");
+        des6.add("Darah nifas berwarna putih.\n");
+
         List<String> des7 = new ArrayList<>();
+        des7.add("Suhu ibu nifas pada 24 jam pertama setelah melahirkan 36,50C-37,50C.\n\n" +
+                "Pada hari kedua atau ketiga dapat terjadi kenaikan suhu hingga 38 0C, namun tidak lebih dari 24 jam. Pada hari kedua atau ketiga dapat terjadi kenaikan suhu karena adanya pembentukan ASI.\n\n" +
+                "Apabila suhu tidak turun setelah hari ketiga, ada kemungkinan terjadi infeksi pada endometrium.\n\n");
+        des7.add("Kejang dapat disebabkan karena meningkatnya tekanan darah berlebih setelah melahirkan yang merupakan salah satu tanda dari postpartum preeklamsia.\n\n" +
+                "Ibu  membutuhkan pengobatan medis segera karena dapat menyebabkan komplikasi serius paska melahirkan.");
+        des7.add("Darah nifas berbau busuk dapat menandakan adanya infeksi disertai keadaan lain seperti demam tinggi, darah nifas berubah warna tidak lazim, muncul gejala pendarahan, serta nyeri pada vagina dan perineum.\n\n" +
+                "Pencegahan dapat dilakukan dengan menjaga kebersihan dan kesehatan daerah sekitar vagina, mengganti pembalut sesering mungkin, dan menghindari berhubungan intim sebelum masa nifas berakhir.\n\n" +
+                "Segera periksa ke dokter untuk mendapatkan penanganan lebih lanjut.\n");
+        des7.add("Batas normal tekanan darah antara 90/60 mmHg sampai 130/90 mmHg.\n\n" +
+                "Tekanan darah yang tinggi dapat menandakan ibu terkena pre-eklamsia post partum.\n\n" +
+                "Segera periksa ke dokter untuk mendapatkan penanganan lebih lanjut.\n\n");
+        des7.add("Pendarahan setelah melahirkan didefinisikan sebagai keadaan kehilangan darah >500 ml melalui persalinan normal, dan >1000 ml untuk caesarean pada 24 jam setelah melahirkan.\n\n" +
+                "Faktor resiko terjadinya pendarahan pada umumnya karena atonia uteri (berkurang/tidak adanya kontraksi uterus setelah plasenta lepas), plasentasi abnormal (penempelan abnormal plasenta pada dinding uterus), trauma, maupun koagulopati.\n\n" +
+                "Bila ibu merasakan rahim teraba lembek, segera lakukan pemijatan/massage di daerah rahim untuk merangsang rahim berkontraksi. Kontraksi pada rahim diperlukan untuk menjepit pembuluh darah yang terbuka selama proses persalinan, sehingga dapat meminimalkan terjadinya perdarahan.");
+        des7.add("Merupakan salah satu tanda preeklamsia.\n\n" +
+                "Segera periksa ke dokter untuk mendapatkan penanganan lebih lanjut.");
+        des7.add("Nyeri hebat pada dada disertai dengan sesak nafas merupakan tanda terjadinya emboli paru.\n\n" +
+                "Emboli paru adalah kondisi tersumbatnya aliran darah di paru-paru, biasanya karena ada gumpalan darah. Kondisi ini bisa mengancam nyawa, apalagi bila muntah darah atau penurunan kesadaran turut terjadi.");
+        des7.add("Batuk disertai sesak nafas pada ibu paska bersalin yang memiliki riwayat preekalmsia merupakan salah satu tanda gagal jantung. Atau ibu kemungkinan mengalami radang paru (pneumonia).\n\n" +
+                "Segera periksa ke dokter untuk mendapatkan penanganan lebih lanjut.\n\n");
+        des7.add("ASI bernanah, payudara kencang, dan berwarna merah mengkilap merupakan tanda mastitis.\n\n" +
+                "Mastitis merupakan peradangan pada jaringan payudara.\n\n" +
+                "Jangan berikan ASI bila ibu mengalami mastitis.\n\n" +
+                "Segera periksa ke dokter untuk mendapatkan penanganan lebih lanjut.");
+
         List<String> des8 = new ArrayList<>();
+        des8.add("Di awal setelah persalinan selesai, bekas luka jahitan akan terlihat seperti sedikit timbul, bengkak dan warnanya lebih gelap jika dibandingkan dengan warna kulit asli Anda.\n\n" +
+                "Bekas luka operasi Caesar umumnya memiliki panjang sekitar 10-15 cm, namun seiring berjalannya waktu, bekas jahitan caesar akan menyusut dan mengering. Bekas yang sudah sembuh akan terlihat menyatu dengan kulit, tidak berair, tidak terasa sakit, serta tidak mengeluarkan nanah maupun darah.");
+        des8.add("1.    Ganti perban balutan setiap 1 kali dalam sehari. Segera ganti balutan apabila kondisinya lembab, basah, maupun tidak nyaman.\n\n" +
+                "2.     Bersihkan saat mandi dan jaga area bekas sayatan agar selalu bersih dan kering seusainya.");
+
         List<String> des9 = new ArrayList<>();
+        des9.add("Luka robekan dan jahitan paska melahirkan normal adalah hal yang umumnya dirasakan setiap ibu.\n");
+        des9.add("-     Jaga kebersihan dengan mandi\n" +
+                "-      Ganti pembalut paska persalinan secara teratur\n" +
+                "-      Konsumsi makanan kaya serat seperti buah dan sayur\n" +
+                "-      Konsultasikan ke bidan atau dokter apabila jahitan terasa sakit\n" +
+                "-      Pastikan jahitan kering setiap selesai buang air kecil maupun buang air besar.");
+
         List<String> des10 = new ArrayList<>();
+        des10.add("Kebutuhan gizi ibu nifas meningkat karena makanan tersebut juga diperlukan untuk menghasilkan ASI bagi bayinya, untuk memulihkan tenaga ibu setelah melahirkan, serta untuk kebutuhan sehari-hari.\n\n" +
+                "Ibu menyusui harus memperbnyak porsi makan. Ibu hendaknya tidak berpantang makanan. Ikan, daging, telur sangat bagus untuk ibu menyusui.\n\n" +
+                "Bila ibu memiliki luka jahitan, tidak perlu berpantang makan ikan dan telur. Protein hewani tersbut diperlukan untuk mempercepat penyembuhan luka.\n\n" +
+                "Ikan dan telur tidak membuat Asi menjadi amis.");
+        des10.add("ASI dipengaruhi oleh makanan yang dimakan ibu.\n\n" +
+                "Ibu menyusui harus makan makanan dengan gizi seimbang yang terdiri dari kalori, protein, lemak, vitamin, dan mineral yang cukup.\n\n" +
+                "Protein yang dikonsumsi terdiri dari hewani dan nabati. Lebih baik bila ibu juga minum susu.\n\n" +
+                "Makanan yang baik adalah yang mudah dicerna dan tidak merangsang, menghindari makanan yang banyak berbumbu, alkohol, terlalu panas atau dingin.");
 
 
         listDeskripsi.put(listTemp.get(0),des1);

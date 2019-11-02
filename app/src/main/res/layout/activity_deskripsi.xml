@@ -19,13 +19,14 @@
             android:textStyle="bold"
             android:text="lalalal"/>
 
-        <RelativeLayout
+        <ScrollView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_below="@+id/sub_judul"
             android:layout_marginTop="10dp"
             android:layout_marginRight="15dp"
             android:layout_marginLeft="15dp"
+            android:padding="10dp"
             android:background="@drawable/rounded_text_editor_pink">
             <TextView
                 android:id="@+id/deskripsi"
@@ -36,7 +37,8 @@
                 android:textColor="#AA5F6E"
                 android:text="lalalala"
                 android:textSize="16sp"
+                android:background="@drawable/rounded_text_editor_pink"
                 android:layout_centerVertical="true"/>
-        </RelativeLayout>
+        </ScrollView>
     </RelativeLayout>
 </RelativeLayout>
