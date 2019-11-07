@@ -22,7 +22,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:hint="Nama Lengkap"
-        android:inputType="text"
+        android:inputType="textPersonName"
         android:textSize="20sp"/>
 
     </com.google.android.material.textfield.TextInputLayout>
@@ -66,7 +66,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="Email"
-            android:inputType="text"
+            android:inputType="textEmailAddress"
             android:textSize="20sp" />
     </com.google.android.material.textfield.TextInputLayout>
 
@@ -87,7 +87,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="Nomor HP"
-            android:inputType="text"
+            android:inputType="phone"
             android:textSize="20sp" />
     </com.google.android.material.textfield.TextInputLayout>
 
@@ -101,14 +101,16 @@
         android:focusableInTouchMode="true"
         android:paddingLeft="20dp"
         android:paddingRight="20dp"
-        android:textColorHint="@color/colorTextView">
+        android:textColorHint="@color/colorTextView"
+        app:passwordToggleEnabled="true">
+
 
         <EditText
             android:id="@+id/formPassword"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="Password"
-            android:inputType="text"
+            android:inputType="textPassword"
             android:textSize="20sp" />
     </com.google.android.material.textfield.TextInputLayout>
 
@@ -129,18 +131,19 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="Confirm Password"
-            android:inputType="text"
+            android:inputType="textPassword"
             android:textSize="20sp" />
     </com.google.android.material.textfield.TextInputLayout>
 
     <Button
         android:id="@+id/btn_next1"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="125dp"
+        android:layout_height="47dp"
         android:layout_alignParentEnd="true"
         android:layout_alignParentBottom="true"
         android:layout_marginEnd="35dp"
-        android:layout_marginBottom="29dp"
+        android:layout_marginBottom="43dp"
+        android:background="@drawable/buttonshape"
         android:text="Next" />
 
 
