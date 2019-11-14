@@ -6,4 +6,20 @@
     <string name="title_notifications">Notifications</string>
     <string name="username">Username</string>
     <string name="judul_konten">Judul Konten</string>
+    <string name="rumah_sakit">Rumah Sakit</string>
+    <string name="puskesmas">Puskesmas</string>
+    <string name="klinik">Klinik</string>
+    <string name="lainnya">Lainnya</string>
+    <string name="dokter">Dokter</string>
+    <string name="bidan">Bidan</string>
+    <string name="spontan">Spontan</string>
+    <string name="vakum">Vakum</string>
+    <string name="gram">gram</string>
+    <string name="cm">cm</string>
+    <string name="hb_o">Hb O</string>
+    <string name="bcg">BCG</string>
+    <string name="ya">Ya</string>
+    <string name="tidak">Tidak</string>
+    <string name="sudah">Sudah</string>
+    <string name="belum">Belum</string>
 </resources>

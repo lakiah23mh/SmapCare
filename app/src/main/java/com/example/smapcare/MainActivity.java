@@ -33,7 +33,7 @@ import android.widget.TextView;
     }
 
     public void perform_action(View v) {
-       Intent intent = new Intent(MainActivity.this,KontenActivity.class);
+       Intent intent = new Intent(MainActivity.this,laporanActivity.class);
        startActivity(intent);
     }
 }
