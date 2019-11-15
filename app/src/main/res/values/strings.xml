@@ -22,4 +22,13 @@
     <string name="tidak">Tidak</string>
     <string name="sudah">Sudah</string>
     <string name="belum">Belum</string>
+    <string name="nifas_0_3">Nifas hari ke 0-3</string>
+    <string name="nifas_4_7">Nifas hari ke 4-7</string>
+    <string name="nifas_15_42">Nifas hari ke 15-42</string>
+    <string name="amis">Amis</string>
+    <string name="busuk">Busuk</string>
+    <string name="SC">SC</string>
+    <string name="asi_tidak_lancar">ASI tidak lancar</string>
+    <string name="putingsusulecet">Puting susu lecet</string>
+    <string name="putingmasukdlm">Puting susu masuk ke dalam</string>
 </resources>
