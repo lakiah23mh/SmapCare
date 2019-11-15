@@ -31,4 +31,19 @@
     <string name="asi_tidak_lancar">ASI tidak lancar</string>
     <string name="putingsusulecet">Puting susu lecet</string>
     <string name="putingmasukdlm">Puting susu masuk ke dalam</string>
+    <string name="sudahlancar">Sudah lancar</string>
+    <string name="belumlancar">Belum lancar</string>
+    <string name="tdkdptisti">Tidak dapat istirahat</string>
+    <string name="ckpisti">Cukup istirahat</string>
+    <string name="sdhkng">Sudah mulai kekuningan</string>
+    <string name="mrhdrh">Berwarna merah darah</string>
+    <string name="keputihan">Keputihan</string>
+    <string name="merah">Merah</string>
+    <string name="lancar">Lancar</string>
+    <string name="tdklancar">Tidak keluar</string>
+    <string name="sembelit">Sembelit/konstipasi</string>
+    <string name="tdklncr">Tidak lancar</string>
+    <string name="nyerimin">Nyeri minimal</string>
+    <string name="nyerihbt">Nyeri hebat</string>
+    <string name="kngkeputihan">Kuning keputihan</string>
 </resources>

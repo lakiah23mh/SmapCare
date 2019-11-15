@@ -9,8 +9,9 @@ import android.widget.LinearLayout;
 import android.widget.RadioGroup;
 
 public class nifasActivity extends AppCompatActivity {
-    RadioGroup rnifas, rpersalinan,rmenyusui, rmslhmenyusui;
-    LinearLayout nifas03,nifas47,nifas814,nifas1542,lhrspontan,lhrsc,menyusuiya,mslhmenyusui;
+    RadioGroup rnifas, rpersalinan,rmenyusui, rmslhmenyusui,rlahir,rlahir1;
+    LinearLayout nifas03,nifas47,nifas814,nifas1542,lhrspontan,lhrsc,menyusuiya,mslhmenyusui, lukaoperasi,
+            lhroperasi;
 
     @SuppressLint("WrongViewCast")
     @Override
@@ -30,6 +31,12 @@ public class nifasActivity extends AppCompatActivity {
         lhrsc = findViewById(R.id.lhrsc);
         menyusuiya = findViewById(R.id.menyusuiya);
         mslhmenyusui = findViewById(R.id.mslhmenyusui);
+
+        rlahir=findViewById(R.id.radiolahir);
+        lhroperasi=findViewById(R.id.lhroperasi);
+
+        rlahir1=findViewById(R.id.radiolahir1);
+        lukaoperasi=findViewById(R.id.lukaoperasi);
 
         rnifas.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {
             @Override
@@ -108,6 +115,36 @@ public class nifasActivity extends AppCompatActivity {
                         break;
                     case 1:
                         mslhmenyusui.setVisibility(View.GONE);
+                        break;
+                }
+            }
+        });
+        rlahir.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {
+            @Override
+            public void onCheckedChanged(RadioGroup radioGroup, int i) {
+                View r1 = rlahir.findViewById(i);
+                int index= rlahir.indexOfChild(r1);
+                switch (index){
+                    case 0:
+                        lhroperasi.setVisibility(View.VISIBLE);
+                        break;
+                    case 1:
+                        lhroperasi.setVisibility(View.GONE);
+                        break;
+                }
+            }
+        });
+        rlahir1.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {
+            @Override
+            public void onCheckedChanged(RadioGroup radioGroup, int i) {
+                View r1 = rlahir1.findViewById(i);
+                int index= rlahir1.indexOfChild(r1);
+                switch (index){
+                    case 0:
+                        lukaoperasi.setVisibility(View.VISIBLE);
+                        break;
+                    case 1:
+                        lukaoperasi.setVisibility(View.GONE);
                         break;
                 }
             }
