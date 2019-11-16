@@ -46,4 +46,13 @@
     <string name="nyerimin">Nyeri minimal</string>
     <string name="nyerihbt">Nyeri hebat</string>
     <string name="kngkeputihan">Kuning keputihan</string>
+    <string name="kejang">Kejang</string>
+    <string name="demam">Demam</string>
+    <string name="bayi_malas_gerak">Bayi malas gerak</string>
+    <string name="bayi_lupa_nafas">Bayi lupa nafas</string>
+    <string name="bayi_susah_netek">Bayi susah netek</string>
+    <string name="bayi_kuning">Bayi kuning</string>
+    <string name="_24_jam_setelah_lahir"><![CDATA[<24 jam setelah lahir]]></string>
+    <string name="_14_hari"><![CDATA[>14 hari]]></string>
+    <string name="batuk_pilek">Batuk pilek</string>
 </resources>
