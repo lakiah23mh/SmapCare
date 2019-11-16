@@ -10,7 +10,7 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
-        <RelativeLayout
+        <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:orientation="vertical">
@@ -27,8 +27,7 @@
                 android:textSize="35dp"></TextView>
 
             <com.google.android.material.textfield.TextInputLayout
-                android:id="@+id/ip_tempatlahir"
-                android:layout_below="@+id/tv_dataibu"
+                android:id="@+id/ip_namaibu"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="10dp"
@@ -36,13 +35,35 @@
                 android:focusableInTouchMode="true"
                 android:paddingLeft="20dp"
                 android:paddingRight="20dp"
+                android:paddingBottom="10dp"
                 android:textColorHint="@color/colorTextView">
 
-                <EditText
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/et_namaibu"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Nama lengkap Ibu"
+                    android:inputType="text"
+                    android:textSize="20sp" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/ip_tempatlahir"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:paddingBottom="10dp"
+                android:textColorHint="@color/colorTextView">
+
+                <com.google.android.material.textfield.TextInputEditText
                     android:id="@+id/formTempatlahir"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:hint="Tempat Lahir Ibu"
+                    android:hint="Tempat lahir Ibu"
                     android:inputType="text"
                     android:textSize="20sp" />
             </com.google.android.material.textfield.TextInputLayout>
@@ -51,50 +72,71 @@
                 android:id="@+id/ip_tgllahir"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_below="@+id/ip_tempatlahir"
                 android:layout_marginTop="10dp"
                 android:focusable="true"
                 android:focusableInTouchMode="true"
                 android:paddingLeft="20dp"
                 android:paddingRight="20dp"
+                android:paddingBottom="10dp"
                 android:textColorHint="@color/colorTextView">
 
-                <EditText
+                <com.google.android.material.textfield.TextInputEditText
                     android:id="@+id/et_tgllahir"
-                    android:layout_width="wrap_content"
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:ems="10"
-                    android:hint="Tanggal Lahir Ibu"
-                    android:inputType="date"/>
+                    android:hint="Tanggal lahir Ibu"
+                    android:inputType="date"
+                    android:textSize="20sp"/>
             </com.google.android.material.textfield.TextInputLayout>
 
-            <com.google.android.material.textfield.TextInputLayout
-                android:id="@+id/ip_agama"
+            <LinearLayout
+                android:id="@+id/ll_agama"
+                android:orientation="horizontal"
                 android:layout_width="match_parent"
-                android:layout_height="57dp"
-                android:layout_below="@+id/ip_tgllahir"
+                android:layout_height="wrap_content"
                 android:layout_marginTop="10dp"
-                android:focusable="true"
-                android:focusableInTouchMode="true"
                 android:paddingLeft="20dp"
-                android:paddingRight="20dp"
-                android:textColorHint="@color/colorTextView">
+                android:paddingRight="20dp">
 
-                <com.weiwangcn.betterspinner.library.material.MaterialBetterSpinner
+                <TextView
+                    android:id="@+id/tv_agama"
+                    android:layout_width="wrap_content"
+                    android:layout_height="?attr/dropdownListPreferredItemHeight"
+                    android:layout_marginTop="10dp"
+                    android:paddingTop="10dp"
+                    android:paddingBottom="10dp"
+                    android:paddingLeft="5dp"
+                    android:text="Agama"
+                    android:textColor="@color/colorTextView"
+                    android:textSize="20dp"></TextView>
+
+                <Spinner
                     android:id="@+id/sp_agama"
-                    android:layout_width="361dp"
-                    android:layout_height="wrap_content"
+                    style="@style/Widget.AppCompat.Spinner"
+                    android:layout_width="250dp"
+                    android:layout_height="?attr/dropdownListPreferredItemHeight"
+                    android:layout_margin="10dp"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginEnd="8dp"
+                    android:background="@drawable/spinner_bg"
+                    android:dropDownWidth="250dp"
+                    android:dropDownVerticalOffset="?attr/dropdownListPreferredItemHeight"
+                    android:entries="@array/agama"
+                    android:popupBackground="@android:color/transparent"
+                    android:popupElevation="3dp"
+                    android:stateListAnimator="@drawable/spinner_sla"
                     android:textSize="20dp"
-                    android:hint="Agama Ibu"
-                    android:textColorHint="@color/colorTextView"
-                    app:met_floatingLabel="normal" />
-            </com.google.android.material.textfield.TextInputLayout>
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+            </LinearLayout>
 
             <com.google.android.material.textfield.TextInputLayout
                 android:id="@+id/ip_alamat"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_below="@+id/ip_agama"
                 android:layout_marginTop="10dp"
                 android:focusable="true"
                 android:focusableInTouchMode="true"
@@ -102,7 +144,7 @@
                 android:paddingRight="20dp"
                 android:textColorHint="@color/colorTextView">
 
-                <EditText
+                <com.google.android.material.textfield.TextInputEditText
                     android:id="@+id/et_alamat"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
@@ -111,41 +153,63 @@
                     android:textSize="20sp" />
             </com.google.android.material.textfield.TextInputLayout>
 
-            <com.google.android.material.textfield.TextInputLayout
-                android:id="@+id/ip_pendidikan"
+            <LinearLayout
+                android:id="@+id/ll_pendidikan"
+                android:orientation="horizontal"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_below="@+id/ip_alamat"
                 android:layout_marginTop="10dp"
-                android:focusable="true"
-                android:focusableInTouchMode="true"
                 android:paddingLeft="20dp"
-                android:paddingRight="20dp"
-                android:textColorHint="@color/colorTextView">
+                android:paddingRight="20dp">
 
-                <com.weiwangcn.betterspinner.library.material.MaterialBetterSpinner
+                <TextView
+                    android:id="@+id/tv_pendidikan"
+                    android:layout_width="wrap_content"
+                    android:layout_height="?attr/dropdownListPreferredItemHeight"
+                    android:layout_marginTop="10dp"
+                    android:paddingTop="10dp"
+                    android:paddingBottom="10dp"
+                    android:paddingLeft="5dp"
+                    android:text="Pendidikan terakhir Ibu"
+                    android:textColor="@color/colorTextView"
+                    android:textSize="20dp"></TextView>
+
+                <Spinner
                     android:id="@+id/sp_pendidikan"
-                    android:layout_width="match_parent"
-                    android:layout_height="48dp"
-                    android:textSize="20dp"
-                    android:hint="Pendidikan Terakhir Ibu"
-                    android:textColorHint="@color/colorTextView"
-                    app:met_floatingLabel="normal" />
-            </com.google.android.material.textfield.TextInputLayout>
+                    style="@style/Widget.AppCompat.Spinner"
+                    android:layout_width="130dp"
+                    android:layout_height="?attr/dropdownListPreferredItemHeight"
+                    android:layout_margin="10dp"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginEnd="8dp"
+                    android:padding="10dp"
+                    android:paddingLeft="15dp"
+                    android:background="@drawable/spinner_bg"
+                    android:dropDownWidth="130dp"
+                    android:dropDownVerticalOffset="?attr/dropdownListPreferredItemHeight"
+                    android:popupBackground="@android:color/transparent"
+                    android:popupElevation="3dp"
+                    android:stateListAnimator="@drawable/spinner_sla"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    android:entries="@array/pendidikan"/>
+            </LinearLayout>
 
             <com.google.android.material.textfield.TextInputLayout
                 android:id="@+id/ip_nik"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_below="@+id/ip_pendidikan"
                 android:layout_marginTop="10dp"
                 android:focusable="true"
                 android:focusableInTouchMode="true"
                 android:paddingLeft="20dp"
                 android:paddingRight="20dp"
+                android:paddingBottom="10dp"
                 android:textColorHint="@color/colorTextView">
 
-                <EditText
+                <com.google.android.material.textfield.TextInputEditText
                     android:id="@+id/et_nik"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
@@ -154,74 +218,70 @@
                     android:textSize="20sp" />
             </com.google.android.material.textfield.TextInputLayout>
 
-            <com.google.android.material.textfield.TextInputLayout
-                android:id="@+id/ip_pekerjaan"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_below="@+id/ip_nik"
-                android:layout_marginTop="10dp"
-                android:focusable="true"
-                android:focusableInTouchMode="true"
-                android:paddingLeft="20dp"
-                android:paddingRight="20dp"
-                android:textColorHint="@color/colorTextView">
-
-                <RelativeLayout
+                <LinearLayout
+                    android:id="@+id/ip_pekerjaan"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:orientation="horizontal">
+                    android:paddingBottom="10dp"
+                    android:orientation="vertical">
 
-                    <TextView
-                        android:id="@+id/tv_pendidikan"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:text="Status Pekerjaan Ibu"
-                        android:textColor="@color/colorTextView"
-                        android:textSize="20dp" />
-
-                    <RadioGroup
-                        android:id="@+id/rg_pendidikan"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:orientation="horizontal"
-                        android:layout_below="@id/tv_pendidikan"
-                        android:padding="15dp"
-                        >
-
-                        <RadioButton
-                            android:id="@+id/rb_bekerja"
+                        <TextView
+                            android:id="@+id/tv_pekerjaan"
                             android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:paddingRight="10dp"
-                            android:text="Bekerja" />
+                            android:layout_height="?attr/dropdownListPreferredItemHeight"
+                            android:layout_marginStart="20dp"
+                            android:layout_marginTop="8dp"
+                            android:layout_marginEnd="8dp"
+                            android:paddingTop="10dp"
+                            android:paddingBottom="10dp"
+                            android:paddingLeft="5dp"
+                            android:textColor="@color/colorTextView"
+                            android:textSize="20dp"
+                            android:text="Status pekerjaan" />
 
-                        <RadioButton
-                            android:id="@+id/rb_tidakbekerja"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:paddingRight="10dp"
-                            android:text="Tidak Bekerja" />
-                    </RadioGroup>
-                </RelativeLayout>
-            </com.google.android.material.textfield.TextInputLayout>
+                            <RadioGroup
+                                android:id="@+id/rg_pendidikan"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical"
+                                android:layout_marginStart="20dp"
+                                android:paddingBottom="15dp"
+                                android:paddingRight="15dp"
+                                android:paddingLeft="15dp">
+
+                                <RadioButton
+                                    android:id="@+id/rb_bekerja"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Bekerja"
+                                    android:textSize="15dp"/>
+
+                                <RadioButton
+                                    android:id="@+id/rb_tidakbekerja"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Tidak Bekerja"
+                                    android:textSize="15dp"/>
+                            </RadioGroup>
+                    </LinearLayout>
 
             <com.google.android.material.textfield.TextInputLayout
                 android:id="@+id/ip_bb"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_below="@+id/ip_pekerjaan"
                 android:layout_marginTop="10dp"
                 android:focusable="true"
                 android:focusableInTouchMode="true"
                 android:paddingLeft="20dp"
                 android:paddingRight="20dp"
+                android:paddingBottom="10dp"
                 android:textColorHint="@color/colorTextView">
 
-                <EditText
+                <com.google.android.material.textfield.TextInputEditText
                     android:id="@+id/et_bb"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:hint="Berat Badan Ibu Saat ini"
+                    android:hint="Berat badan Ibu saat ini"
                     android:inputType="number"
                     android:textSize="20sp" />
             </com.google.android.material.textfield.TextInputLayout>
@@ -230,15 +290,15 @@
                 android:id="@+id/ip_hb"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_below="@+id/ip_bb"
                 android:layout_marginTop="10dp"
                 android:focusable="true"
                 android:focusableInTouchMode="true"
                 android:paddingLeft="20dp"
                 android:paddingRight="20dp"
+                android:paddingBottom="10dp"
                 android:textColorHint="@color/colorTextView">
 
-                <EditText
+                <com.google.android.material.textfield.TextInputEditText
                     android:id="@+id/et_hb"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
@@ -247,62 +307,57 @@
                     android:textSize="20sp" />
             </com.google.android.material.textfield.TextInputLayout>
 
-            <com.google.android.material.textfield.TextInputLayout
-                android:id="@+id/ip_imunisasi"
+            <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_below="@+id/ip_hb"
-                android:layout_marginTop="10dp"
-                android:focusable="true"
-                android:focusableInTouchMode="true"
-                android:paddingLeft="20dp"
-                android:paddingRight="20dp"
-                android:textColorHint="@color/colorTextView">
+                android:orientation="vertical">
 
-                <RelativeLayout
-                    android:layout_width="match_parent"
+                <TextView
+                    android:id="@+id/tv_imunisasi"
+                    android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:orientation="horizontal">
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginEnd="8dp"
+                    android:paddingTop="10dp"
+                    android:paddingBottom="10dp"
+                    android:paddingLeft="5dp"
+                    android:textColor="@color/colorTextView"
+                    android:textSize="20dp"
+                    android:text="Apakah Ibu pernah melakukan imunisasi TT?" />
 
-                    <TextView
-                        android:id="@+id/tv_imunisasi"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:text="Apakah Pernah Melakukan Imunisasi TT?"
-                        android:textColor="@color/colorTextView"
-                        android:textSize="20dp" />
+                <RadioGroup
+                    android:id="@+id/rg_imunisasi"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginStart="20dp"
+                    android:paddingBottom="15dp"
+                    android:paddingRight="15dp"
+                    android:paddingLeft="15dp">
 
-                    <RadioGroup
-                        android:id="@+id/rg_imunisasi"
+                    <RadioButton
+                        android:id="@+id/rb_pernah"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:orientation="horizontal"
-                        android:layout_below="@id/tv_imunisasi"
-                        android:padding="15dp"
-                        >
+                        android:paddingRight="10dp"
+                        android:textSize="15dp"
+                        android:text="Pernah" />
 
-                        <RadioButton
-                            android:id="@+id/rb_pernah"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:paddingRight="10dp"
-                            android:text="Pernah" />
-
-                        <RadioButton
-                            android:id="@+id/rb_tidakpernah"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:paddingRight="10dp"
-                            android:text="Tidak Pernah" />
-                    </RadioGroup>
-                </RelativeLayout>
-            </com.google.android.material.textfield.TextInputLayout>
+                    <RadioButton
+                        android:id="@+id/rb_tidakpernah"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingRight="10dp"
+                        android:textSize="15dp"
+                        android:text="Belum Pernah" />
+                </RadioGroup>
+            </LinearLayout>
 
             <TextView
                 android:id="@+id/tv_datasuami"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_below="@+id/ip_imunisasi"
                 android:layout_alignParentStart="true"
                 android:layout_marginStart="22dp"
                 android:layout_marginTop="22dp"
@@ -314,19 +369,19 @@
                 android:id="@+id/ip_namasuami"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_below="@+id/tv_datasuami"
                 android:layout_marginTop="10dp"
                 android:focusable="true"
                 android:focusableInTouchMode="true"
                 android:paddingLeft="20dp"
                 android:paddingRight="20dp"
+                android:paddingBottom="10dp"
                 android:textColorHint="@color/colorTextView">
 
-                <EditText
+                <com.google.android.material.textfield.TextInputEditText
                     android:id="@+id/et_namasuami"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:hint="Nama Lengkap Suami"
+                    android:hint="Nama lengkap Suami"
                     android:inputType="textPersonName"
                     android:textSize="20sp" />
             </com.google.android.material.textfield.TextInputLayout>
@@ -335,58 +390,79 @@
                 android:id="@+id/ip_nosuami"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_below="@+id/ip_namasuami"
                 android:layout_marginTop="10dp"
                 android:focusable="true"
                 android:focusableInTouchMode="true"
                 android:paddingLeft="20dp"
                 android:paddingRight="20dp"
+                android:paddingBottom="10dp"
                 android:textColorHint="@color/colorTextView">
 
-                <EditText
+                <com.google.android.material.textfield.TextInputEditText
                     android:id="@+id/et_nosuami"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:hint="Nomor HP Suami"
                     android:inputType="phone"
-                    android:textSize="20sp" />
+                    android:textSize="20sp"
+                    android:hint="Nomor HP Suami"/>
             </com.google.android.material.textfield.TextInputLayout>
 
-            <com.google.android.material.textfield.TextInputLayout
-                android:id="@+id/ip_agamasuami"
+            <LinearLayout
+                android:id="@+id/ll_agamasuami"
+                android:orientation="horizontal"
                 android:layout_width="match_parent"
-                android:layout_height="57dp"
-                android:layout_below="@+id/ip_nosuami"
+                android:layout_height="wrap_content"
                 android:layout_marginTop="10dp"
-                android:focusable="true"
-                android:focusableInTouchMode="true"
                 android:paddingLeft="20dp"
-                android:paddingRight="20dp"
-                android:textColorHint="@color/colorTextView">
+                android:paddingRight="20dp">
 
-                <com.weiwangcn.betterspinner.library.material.MaterialBetterSpinner
+                <TextView
+                    android:id="@+id/tv_agamasuami"
+                    android:layout_width="wrap_content"
+                    android:layout_height="?attr/dropdownListPreferredItemHeight"
+                    android:layout_marginTop="10dp"
+                    android:paddingTop="10dp"
+                    android:paddingBottom="10dp"
+                    android:paddingLeft="5dp"
+                    android:text="Agama Suami"
+                    android:textColor="@color/colorTextView"
+                    android:textSize="20dp"></TextView>
+
+                <Spinner
                     android:id="@+id/sp_agamasuami"
-                    android:layout_width="361dp"
-                    android:layout_height="wrap_content"
-                    android:textSize="20dp"
-                    android:hint="Agama Suami"
-                    android:textColorHint="@color/colorTextView"
-                    app:met_floatingLabel="normal" />
-            </com.google.android.material.textfield.TextInputLayout>
+                    style="@style/Widget.AppCompat.Spinner"
+                    android:layout_width="204dp"
+                    android:layout_height="?attr/dropdownListPreferredItemHeight"
+                    android:layout_margin="10dp"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginEnd="8dp"
+                    android:background="@drawable/spinner_bg"
+                    android:dropDownWidth="205dp"
+                    android:dropDownVerticalOffset="?attr/dropdownListPreferredItemHeight"
+                    android:paddingRight="14dp"
+                    android:popupBackground="@android:color/transparent"
+                    android:popupElevation="3dp"
+                    android:stateListAnimator="@drawable/spinner_sla"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    android:entries="@array/agama"/>
+            </LinearLayout>
 
             <com.google.android.material.textfield.TextInputLayout
                 android:id="@+id/ip_pekerjaansuami"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_below="@+id/ip_agamasuami"
                 android:layout_marginTop="10dp"
                 android:focusable="true"
                 android:focusableInTouchMode="true"
                 android:paddingLeft="20dp"
                 android:paddingRight="20dp"
+                android:paddingBottom="10dp"
                 android:textColorHint="@color/colorTextView">
 
-                <EditText
+                <com.google.android.material.textfield.TextInputEditText
                     android:id="@+id/et_pekerjaansuami"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
@@ -395,41 +471,62 @@
                     android:textSize="20sp" />
             </com.google.android.material.textfield.TextInputLayout>
 
-            <com.google.android.material.textfield.TextInputLayout
-                android:id="@+id/ip_pendidikansuami"
+            <LinearLayout
+                android:id="@+id/ll_pendidikansuami"
+                android:orientation="horizontal"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_below="@+id/ip_pekerjaansuami"
                 android:layout_marginTop="10dp"
-                android:focusable="true"
-                android:focusableInTouchMode="true"
                 android:paddingLeft="20dp"
-                android:paddingRight="20dp"
-                android:textColorHint="@color/colorTextView">
+                android:paddingRight="20dp">
 
-                <com.weiwangcn.betterspinner.library.material.MaterialBetterSpinner
+                <TextView
+                    android:id="@+id/tv_pendidikansuami"
+                    android:layout_width="wrap_content"
+                    android:layout_height="?attr/dropdownListPreferredItemHeight"
+                    android:layout_marginTop="10dp"
+                    android:paddingTop="10dp"
+                    android:paddingBottom="10dp"
+                    android:paddingLeft="5dp"
+                    android:text="Pendidikan terakhir Suami"
+                    android:textColor="@color/colorTextView"
+                    android:textSize="20dp"></TextView>
+
+                <Spinner
                     android:id="@+id/sp_pendidikansuami"
-                    android:layout_width="match_parent"
-                    android:layout_height="48dp"
-                    android:textSize="20dp"
-                    android:hint="Pendidikan Terakhir Suami"
-                    android:textColorHint="@color/colorTextView"
-                    app:met_floatingLabel="normal" />
-            </com.google.android.material.textfield.TextInputLayout>
+                    style="@style/Widget.AppCompat.Spinner"
+                    android:layout_width="112dp"
+                    android:layout_height="?attr/dropdownListPreferredItemHeight"
+                    android:layout_margin="10dp"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginEnd="8dp"
+                    android:background="@drawable/spinner_bg"
+                    android:dropDownWidth="112dp"
+                    android:dropDownVerticalOffset="?attr/dropdownListPreferredItemHeight"
+                    android:paddingRight="14dp"
+                    android:popupBackground="@android:color/transparent"
+                    android:popupElevation="3dp"
+                    android:stateListAnimator="@drawable/spinner_sla"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    android:entries="@array/pendidikan"/>
+            </LinearLayout>
 
             <com.google.android.material.textfield.TextInputLayout
                 android:id="@+id/ip_alamatsuami"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_below="@+id/ip_pendidikansuami"
                 android:layout_marginTop="10dp"
                 android:focusable="true"
                 android:focusableInTouchMode="true"
                 android:paddingLeft="20dp"
                 android:paddingRight="20dp"
+                android:paddingBottom="10dp"
                 android:textColorHint="@color/colorTextView">
 
-                <EditText
+                <com.google.android.material.textfield.TextInputEditText
                     android:id="@+id/et_alamatsuami"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
@@ -442,16 +539,15 @@
                 android:id="@+id/btn_next2"
                 android:layout_width="125dp"
                 android:layout_height="47dp"
-                android:layout_below="@+id/ip_alamatsuami"
                 android:layout_alignParentEnd="true"
                 android:layout_alignParentBottom="true"
-                android:layout_marginTop="9dp"
-                android:layout_marginEnd="35dp"
+                android:layout_marginStart="210dp"
+                android:layout_marginTop="40dp"
                 android:layout_marginBottom="41dp"
                 android:background="@drawable/buttonshape"
                 android:text="Next" />
 
-        </RelativeLayout>
+        </LinearLayout>
     </ScrollView>
 
 

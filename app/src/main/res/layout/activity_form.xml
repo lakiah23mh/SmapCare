@@ -1,37 +1,26 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".FormActivity">
+    tools:context=".FormActivity"
+    android:orientation="vertical">
 
-    <com.google.android.material.textfield.TextInputLayout
-        android:id="@+id/input1"
-        android:layout_width="match_parent"
+    <TextView
+        android:id="@+id/tv_signup"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:focusable="true"
-        android:focusableInTouchMode="true"
-        android:textColorHint="@color/colorTextView"
-        android:layout_marginTop="75dp"
-        android:paddingLeft="20dp"
-        android:paddingRight="20dp">
-
-    <EditText
-        android:id="@+id/formNama"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:hint="Nama Lengkap"
-        android:inputType="textPersonName"
-        android:textSize="20sp"/>
-
-    </com.google.android.material.textfield.TextInputLayout>
+        android:layout_marginTop="50dp"
+        android:layout_marginBottom="20dp"
+        android:layout_gravity="center"
+        android:text="Sign Up"
+        android:textSize="35dp"></TextView>
 
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/input2"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/input1"
         android:layout_marginTop="10dp"
         android:focusable="true"
         android:focusableInTouchMode="true"
@@ -39,7 +28,7 @@
         android:paddingRight="20dp"
         android:textColorHint="@color/colorTextView">
 
-        <EditText
+        <com.google.android.material.textfield.TextInputEditText
             android:id="@+id/formUsername"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -53,7 +42,6 @@
         android:id="@+id/input3"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/input2"
         android:layout_marginTop="10dp"
         android:focusable="true"
         android:focusableInTouchMode="true"
@@ -61,7 +49,7 @@
         android:paddingRight="20dp"
         android:textColorHint="@color/colorTextView">
 
-        <EditText
+        <com.google.android.material.textfield.TextInputEditText
             android:id="@+id/formEmail"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -74,7 +62,6 @@
         android:id="@+id/input4"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/input3"
         android:layout_marginTop="10dp"
         android:focusable="true"
         android:focusableInTouchMode="true"
@@ -82,7 +69,7 @@
         android:paddingRight="20dp"
         android:textColorHint="@color/colorTextView">
 
-        <EditText
+        <com.google.android.material.textfield.TextInputEditText
             android:id="@+id/formHp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -95,7 +82,6 @@
         android:id="@+id/input5"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/input4"
         android:layout_marginTop="10dp"
         android:focusable="true"
         android:focusableInTouchMode="true"
@@ -104,8 +90,7 @@
         android:textColorHint="@color/colorTextView"
         app:passwordToggleEnabled="true">
 
-
-        <EditText
+        <com.google.android.material.textfield.TextInputEditText
             android:id="@+id/formPassword"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -118,15 +103,15 @@
         android:id="@+id/input6"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/input5"
         android:layout_marginTop="10dp"
         android:focusable="true"
         android:focusableInTouchMode="true"
         android:paddingLeft="20dp"
         android:paddingRight="20dp"
-        android:textColorHint="@color/colorTextView">
+        android:textColorHint="@color/colorTextView"
+        app:passwordToggleEnabled="true">
 
-        <EditText
+        <com.google.android.material.textfield.TextInputEditText
             android:id="@+id/formPassword2"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -139,12 +124,11 @@
         android:id="@+id/btn_next1"
         android:layout_width="125dp"
         android:layout_height="47dp"
-        android:layout_alignParentEnd="true"
-        android:layout_alignParentBottom="true"
-        android:layout_marginEnd="35dp"
-        android:layout_marginBottom="43dp"
+        android:layout_marginStart="210dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginBottom="41dp"
         android:background="@drawable/buttonshape"
         android:text="Next" />
 
 
-</RelativeLayout>
+</LinearLayout>
