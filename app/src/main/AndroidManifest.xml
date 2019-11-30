@@ -10,6 +10,14 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity android:name=".Form2Activity"></activity>
+        <activity android:name=".keluhanBayiActivity">
+        <activity android:name=".nifasActivity" />
+        <activity android:name=".realTimeActivity" />
+        <activity android:name=".ibuMelahirkanActivity" />
+        <activity android:name=".laporanActivity" />
+        <activity android:name=".DeskripsiActivity" />
+        <activity android:name=".MenuActivity"></activity>
+        <activity android:name=".DeskripsiActivity"/>
         <activity android:name=".Home3Activity" />
         <activity android:name=".Home2Activity" />
         <activity android:name=".FormActivity" />
